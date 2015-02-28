@@ -1,0 +1,18 @@
+/*
+  Clearfix
+  via http://nicolasgallagher.com/micro-clearfix-hack
+*/
+
+%clearfix {
+  *zoom: 1;
+  
+  &:before,
+  &:after {
+    disply: table;
+    content: "";
+  }
+  
+  &:after {
+    clear: both;
+  }
+}
